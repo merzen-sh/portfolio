@@ -1,0 +1,21 @@
+{
+  "name": "wizard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -F web dev",
+    "build": "pnpm -F web build",
+    "lint": "pnpm -F web lint"
+  },
+  "dependencies": {
+    "oxfmt": "^0.53.0",
+    "oxlint": "^1.68.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.1",
+      "onFail": "download"
+    }
+  }
+}

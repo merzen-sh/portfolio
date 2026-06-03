@@ -1,0 +1,5 @@
+@import "@wizard/ui/globals.css";
+
+html {
+  scroll-behavior: smooth;
+}
