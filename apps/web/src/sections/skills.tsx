@@ -1,4 +1,4 @@
-import { Badge } from "@wizard/ui";
+import { Badge } from "@portfolio/ui";
 
 const skillCategories = [
   {
@@ -17,14 +17,19 @@ const skillCategories = [
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="flex flex-col items-center gap-12 bg-muted/30 px-6 py-24">
+    <section
+      id="skills"
+      className="flex flex-col items-center gap-12 bg-muted/30 px-6 py-24"
+    >
       <div className="flex flex-col items-center gap-4">
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-xl font-bold text-primary-foreground">
           MW
         </div>
         <div className="text-center">
           <p className="font-semibold text-foreground">Yuthana Wareesri</p>
-          <p className="text-sm text-muted-foreground">Web Dev &amp; Software Engineer</p>
+          <p className="text-sm text-muted-foreground">
+            Web Dev &amp; Software Engineer
+          </p>
         </div>
         <p className="max-w-md text-center text-xs text-muted-foreground leading-relaxed">
           Got my first PC at 7, started coding at 12, and never looked back.
@@ -43,7 +48,9 @@ export function SkillsSection() {
       </div>
 
       <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Skills</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Skills
+        </h2>
         <p className="mt-3 text-muted-foreground">Technologies I work with</p>
       </div>
       <div className="mx-auto grid w-full max-w-4xl gap-8 sm:grid-cols-3">

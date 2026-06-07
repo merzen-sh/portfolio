@@ -5,6 +5,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/wizard/",
-  plugins: [tailwindcss(), react(), babel({ presets: [reactCompilerPreset()] })],
+  base: "/portfolio/",
+  plugins: [
+    tailwindcss(),
+    react(),
+    babel({ presets: [reactCompilerPreset()] }),
+  ],
 });

@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "@wizard/ui";
+import { Navbar, Footer } from "@portfolio/ui";
 import { HeroSection } from "./sections/hero";
 import { ProjectsSection } from "./sections/projects";
 import { SkillsSection } from "./sections/skills";

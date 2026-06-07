@@ -1,4 +1,11 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, Badge } from "@wizard/ui";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  Badge,
+} from "@portfolio/ui";
 
 const projects = [
   {
@@ -23,10 +30,17 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="flex flex-col items-center gap-12 px-6 py-24">
+    <section
+      id="projects"
+      className="flex flex-col items-center gap-12 px-6 py-24"
+    >
       <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Projects</h2>
-        <p className="mt-3 text-muted-foreground">Some things I've built recently</p>
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Projects
+        </h2>
+        <p className="mt-3 text-muted-foreground">
+          Some things I've built recently
+        </p>
       </div>
       <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (

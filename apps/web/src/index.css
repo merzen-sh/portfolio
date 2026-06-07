@@ -1,5 +1,5 @@
-@import "@wizard/ui/globals.css";
+@import "@portfolio/ui/globals.css";
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
