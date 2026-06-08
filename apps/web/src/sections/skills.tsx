@@ -36,7 +36,7 @@ export function SkillsSection() {
           </p>
         </div>
         <p className="max-w-md text-center text-xs text-muted-foreground leading-relaxed">
-          ได้ PC เครื่องแรกตอนอายุ 7 เริ่มเขียนโค้ดตอน 12 และไม่เคยหยุดพัฒนาตัวเองเลย
+          ได้ PC เครื่องแรกตอนอายุ 7 ปี เริ่มเขียนโค้ดตอน 12 ปี และไม่เคยหยุดพัฒนาตัวเองเลย
         </p>
         <p className="text-xs font-medium text-muted-foreground italic">
           "วันนี้ต้องเก่งกว่าเมื่อวาน"
