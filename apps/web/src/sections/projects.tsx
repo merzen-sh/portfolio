@@ -9,21 +9,24 @@ import {
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "AI CLI",
     description:
-      "🥇 1st Place — Regional Academic E-Commerce Competition (95.5/100). A full-featured online store with real-time inventory, payment processing, and admin dashboard.",
-    tags: ["Next.js", "PostgreSQL", "Stripe", "Tailwind CSS", "1st Place", "95.5/100"],
+      "An intelligent command-line assistant built in Rust, leveraging AI for code generation, file operations, and natural language queries.",
+    repo: undefined as string | undefined,
+    tags: ["Rust", "CLI", "AI", "LLM"],
   },
   {
-    title: "Task Management App",
+    title: "Vault Cat",
     description:
-      "Collaborative project management tool with drag-and-drop boards, real-time sync, and team workflows.",
-    tags: ["React", "Socket.io", "Node.js", "MongoDB"],
+      "A secret key manager built with Rust and Tauri, using ChaCha20-Poly1305 for encryption.",
+    repo: "https://github.com/merzen-sh/vault-cat",
+    tags: ["Rust", "Tauri", "Vite", "React", "ChaCha20-Poly1305", "Encryption"],
   },
   {
     title: "Weather Dashboard",
     description:
       "Real-time weather visualization with interactive maps, historical data charts, and severe weather alerts.",
+    repo: undefined as string | undefined,
     tags: ["TypeScript", "D3.js", "OpenWeather API", "Vite"],
   },
 ];
@@ -49,12 +52,22 @@ export function ProjectsSection() {
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
-            <CardContent className="mt-auto flex flex-wrap gap-2">
+            <CardContent className="mt-auto flex flex-wrap items-center gap-2">
               {project.tags.map((tag) => (
                 <Badge key={tag} variant="secondary">
                   {tag}
                 </Badge>
               ))}
+              {project.repo && (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto text-xs text-muted-foreground hover:text-foreground"
+                >
+                  GitHub →
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}

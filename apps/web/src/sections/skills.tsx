@@ -27,12 +27,19 @@ export function SkillsSection() {
         </div>
         <div className="text-center">
           <p className="font-semibold text-foreground">Yuthana Wareesri</p>
+          <p className="text-xs text-muted-foreground">(มาร์ค / นับ)</p>
+          <p className="text-sm text-muted-foreground">
+            เกิด 20 ตุลาคม 2544 (อายุ {new Date().getFullYear() - 2001 - (new Date() < new Date(new Date().getFullYear(), 9, 20) ? 1 : 0)} ปี)
+          </p>
           <p className="text-sm text-muted-foreground">
             Web Dev &amp; Software Engineer
           </p>
         </div>
         <p className="max-w-md text-center text-xs text-muted-foreground leading-relaxed">
-          Got my first PC at 7, started coding at 12, and never looked back.
+          ได้ PC เครื่องแรกตอนอายุ 7 เริ่มเขียนโค้ดตอน 12 และไม่เคยหยุดพัฒนาตัวเองเลย
+        </p>
+        <p className="text-xs font-medium text-muted-foreground italic">
+          "วันนี้ต้องเก่งกว่าเมื่อวาน"
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           <a
