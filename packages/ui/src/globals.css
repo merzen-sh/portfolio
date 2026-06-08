@@ -3,6 +3,7 @@
 @source "../";
 
 @theme {
+  --font-sans: "Kanit", sans-serif;
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);

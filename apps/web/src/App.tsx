@@ -2,7 +2,6 @@ import { Navbar, Footer } from "@portfolio/ui";
 import { HeroSection } from "./sections/hero";
 import { ProjectsSection } from "./sections/projects";
 import { SkillsSection } from "./sections/skills";
-import { ContactSection } from "./sections/contact";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <HeroSection />
         <ProjectsSection />
         <SkillsSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>

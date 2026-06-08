@@ -11,8 +11,8 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description:
-      "A full-featured online store with real-time inventory, payment processing, and admin dashboard.",
-    tags: ["Next.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      "🥇 1st Place — Regional Academic E-Commerce Competition (95.5/100). A full-featured online store with real-time inventory, payment processing, and admin dashboard.",
+    tags: ["Next.js", "PostgreSQL", "Stripe", "Tailwind CSS", "1st Place", "95.5/100"],
   },
   {
     title: "Task Management App",
