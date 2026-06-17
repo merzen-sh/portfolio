@@ -22,9 +22,11 @@ export function SkillsSection() {
       className="flex flex-col items-center gap-12 bg-muted/30 px-6 py-24"
     >
       <div className="flex flex-col items-center gap-4">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-xl font-bold text-primary-foreground">
-          MW
-        </div>
+        <img
+          src={`${import.meta.env.BASE_URL}avatar.jpeg`}
+          alt="Yuthana Wareesri"
+          className="h-16 w-16 rounded-full object-cover object-[right_-30px_top_0px] border-2"
+        />
         <div className="text-center">
           <p className="font-semibold text-foreground">Yuthana Wareesri</p>
           <p className="text-xs text-muted-foreground">(มาร์ค / นับ)</p>
