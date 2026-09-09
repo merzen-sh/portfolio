@@ -3,3 +3,71 @@
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(135deg);
+  }
+
+  5% {
+    opacity: 0.8;
+  }
+
+  25% {
+    opacity: 0;
+    transform: translate3d(220px, 220px, 0) rotate(135deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(220px, 220px, 0) rotate(135deg);
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-35deg);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0.2;
+  }
+
+  45% {
+    opacity: 0.18;
+  }
+
+  55% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(120vw, -30vh, 0) rotate(-35deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
