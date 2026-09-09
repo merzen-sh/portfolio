@@ -90,6 +90,7 @@ export function SkillsSection() {
                 <Badge variant="outline">Technology</Badge>
                 <Badge variant="outline">Space</Badge>
                 <Badge variant="outline">Software</Badge>
+                <Badge variant="outline">AI</Badge>
               </div>
 
               {/* Story */}
