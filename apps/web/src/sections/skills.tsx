@@ -1,3 +1,4 @@
+
 import { Badge } from "@portfolio/ui";
 
 const skillCategories = [
@@ -23,6 +24,12 @@ const age =
   2001 -
   (new Date() < new Date(new Date().getFullYear(), 9, 20) ? 1 : 0);
 
+const githubStatsUrl =
+  "https://ghstats.dev/api/card?username=merzen-sh&bg=00000000&hide_border=true";
+
+const githubLanguagesUrl =
+  "https://ghstats.dev/api/langs?username=merzen-sh&max_langs=12&layout=horizontal_list&bg=00000000&hide_border=true";
+
 export function SkillsSection() {
   return (
     <section
@@ -32,9 +39,7 @@ export function SkillsSection() {
       {/* Background decoration */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-1/2 top-20 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
-
         <div className="absolute -left-32 bottom-0 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
-
         <div className="absolute -right-32 top-1/3 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
       </div>
 
@@ -188,7 +193,7 @@ export function SkillsSection() {
               }}
             >
               {/* Hover glow */}
-              <div className="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-primary/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-primary/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
 
               <div className="relative">
                 {/* Category number */}
@@ -229,6 +234,75 @@ export function SkillsSection() {
           ))}
         </div>
 
+        {/* GitHub Statistics */}
+        <div className="w-full max-w-4xl">
+          <div className="mb-8 text-center">
+            <div className="mb-3 flex items-center justify-center gap-3">
+              <span className="h-px w-8 bg-border" />
+              <span className="text-xs font-medium uppercase tracking-[0.3em] text-primary">
+                Open Source
+              </span>
+              <span className="h-px w-8 bg-border" />
+            </div>
+
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+              GitHub Activity
+            </h2>
+
+            <p className="mt-3 text-sm text-muted-foreground">
+              A look at my development activity and favorite technologies
+            </p>
+          </div>
+
+          {/* Stats + Languages */}
+          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-6">
+            {/* GitHub Stats */}
+            <div className="flex min-w-0 items-center justify-center">
+              <img
+                src={githubStatsUrl}
+                alt="GitHub Stats"
+                loading="lazy"
+                className="h-auto w-full max-w-md object-contain"
+              />
+            </div>
+
+            {/* Top Languages */}
+            <div className="flex min-w-0 items-center justify-center">
+              <img
+                src={githubLanguagesUrl}
+                alt="GitHub Top Languages"
+                loading="lazy"
+                className="h-auto w-full object-contain"
+              />
+            </div>
+          </div>
+
+          {/* GitHub link */}
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://github.com/merzen-sh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              View GitHub Profile
+              <svg
+                className="h-3.5 w-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 17 17 7M7 7h10v10"
+                  strokeWidth={1.8}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         {/* Bottom statement */}
         <div className="flex items-center gap-3 text-center text-xs text-muted-foreground">
           <span className="h-px w-12 bg-border" />
@@ -239,3 +313,4 @@ export function SkillsSection() {
     </section>
   );
 }
+
